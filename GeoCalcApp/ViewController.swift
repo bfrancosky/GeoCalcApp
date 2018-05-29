@@ -66,6 +66,8 @@ class ViewController: UIViewController {
         //self.latP2.delegate = self
         //self.longP2.delegate = self
         //view.endEditing(true)
+        
+        self.view.backgroundColor = BACKGROUND_COLOR1
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

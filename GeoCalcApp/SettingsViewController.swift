@@ -51,7 +51,7 @@ class SettingsViewController: UIViewController {
 
 extension SettingsViewController : UIPickerViewDataSource, UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        <#code#>
+        return 1
     }
     
     // The number of columsn of data

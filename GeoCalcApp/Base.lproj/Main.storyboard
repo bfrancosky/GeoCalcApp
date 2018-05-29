@@ -162,9 +162,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lf8-cY-Dqw">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IpU-Xg-bCh">
+                                <rect key="frame" x="0.0" y="505" width="375" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="Xrv-za-683"/>
+                                </constraints>
+                            </pickerView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lf8-cY-Dqw">
                                 <rect key="frame" x="0.0" y="64" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Lf8-cY-Dqw" secondAttribute="height" multiplier="375:44" id="nrQ-yf-In9"/>
+                                    <constraint firstAttribute="width" secondItem="Lf8-cY-Dqw" secondAttribute="height" multiplier="375:44" id="oN7-nm-xSU"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Title" id="LLi-PB-Eez">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="vS2-eO-a1T"/>
@@ -172,12 +181,17 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IpU-Xg-bCh">
-                                <rect key="frame" x="0.0" y="505" width="375" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lf8-cY-Dqw" firstAttribute="leading" secondItem="1we-g6-lAU" secondAttribute="leading" id="LuR-cy-yjp"/>
+                            <constraint firstItem="Lf8-cY-Dqw" firstAttribute="leading" secondItem="IpU-Xg-bCh" secondAttribute="leading" id="QKA-tq-i88"/>
+                            <constraint firstItem="Lf8-cY-Dqw" firstAttribute="trailing" secondItem="IpU-Xg-bCh" secondAttribute="trailing" id="Wer-DP-0dH"/>
+                            <constraint firstItem="Lf8-cY-Dqw" firstAttribute="top" secondItem="WRT-Je-DUf" secondAttribute="top" id="c65-87-Kye"/>
+                            <constraint firstItem="IpU-Xg-bCh" firstAttribute="bottom" secondItem="WRT-Je-DUf" secondAttribute="bottom" id="jAq-0V-2zf"/>
+                            <constraint firstItem="Lf8-cY-Dqw" firstAttribute="leading" secondItem="WRT-Je-DUf" secondAttribute="leading" id="t2h-n6-8lQ"/>
+                            <constraint firstItem="Lf8-cY-Dqw" firstAttribute="trailing" secondItem="WRT-Je-DUf" secondAttribute="trailing" id="z4M-av-ua8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WRT-Je-DUf"/>
                     </view>
                     <connections>
@@ -186,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P5s-RD-jLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="367" y="116"/>
+            <point key="canvasLocation" x="365.60000000000002" y="115.59220389805098"/>
         </scene>
     </scenes>
 </document>

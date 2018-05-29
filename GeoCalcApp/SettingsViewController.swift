@@ -17,7 +17,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var picker: UIPickerView!
     
     var pickerData: [String] = [String]()
-    var selection: String = "Degrees"
+    var selection : String = "Degrees"
     var delegate : SettingsSelectionControllerDelegate?
     
     
@@ -50,16 +50,16 @@ class SettingsViewController: UIViewController {
 }
 
 extension SettingsViewController : UIPickerViewDataSource, UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        <#code#>
+    }
+    
     // The number of columsn of data
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    func numberOfComponents(in: UIPickerView) -> Int
+    {
         return 1
     }
     
-    // The number of rows of data
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count
-        
-    }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return self.pickerData[row]

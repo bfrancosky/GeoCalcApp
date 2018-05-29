@@ -8,8 +8,11 @@
 
 import UIKit
 
-let BACKGROUND_COLOR = UIColor.lightGray
-let FOREGROUND_COLOR = UIColor.purple
+let BACKGROUND_COLOR1 = UIColor.lightGray
+let BACKGROUND_COLOR2 = UIColor.magenta
+let FOREGROUND_COLOR1 = UIColor.purple
+let FOREGROUND_COLOR2 = UIColor.blue
+let FOREGROUND_COLOR3 = UIColor.red
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,8 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.statusBarStyle = UIStatusBarStyle.lightContent
         
         let navAppearance = UINavigationBar.appearance()
-        navAppearance.barTintColor = BACKGROUND_COLOR
-        navAppearance.tintColor = FOREGROUND_COLOR
+        navAppearance.barTintColor = BACKGROUND_COLOR1
+        navAppearance.tintColor = FOREGROUND_COLOR1
         navAppearance.isTranslucent = false
         //navAppearance.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         
